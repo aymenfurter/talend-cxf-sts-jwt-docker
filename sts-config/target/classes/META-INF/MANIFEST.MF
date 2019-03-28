@@ -1,0 +1,37 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1553805779709
+Build-Jdk: 1.8.0_192
+Built-By: mika
+Bundle-Blueprint: OSGI-INF/blueprint/beans.xml
+Bundle-Description: Talend ESB SE bundles Service Factory and Integratio
+ n Factory,        Service Locator, Service Activity Monitoring and a de
+ mo application        to a stable, production ready distribution based 
+ on the industry leading        open source frameworks Apache CXF and Ap
+ ache Camel.        It includes Web Service support based on JAX-WS and 
+ enables simple and scalable        message based systems using well kno
+ wn Enterprise Integration Patterns.        The Service Locator maintain
+ s a repository of service endpoints which        can be used by Service
+  Consumers to support simple failover and load        balancing scenari
+ os. Service Activity Monitoring allows to log and        monitor servic
+ e calls. A documented Car Rental demo application illustrates        ho
+ w to use these features.
+Bundle-DocURL: www.talend.com
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Talend ESB :: STS :: Config
+Bundle-SymbolicName: org.talend.esb.sts.config
+Bundle-Vendor: Talend Inc.
+Bundle-Version: 7.0.1
+Created-By: Apache Maven Bundle Plugin
+Export-Package: org.talend.esb.sts.config;version="7.0.1",org.talend.esb
+ .sts.callback;version="7.0.1"
+Fragment-Host: org.apache.cxf.services.sts.core
+Import-Package: javax.security.auth.callback,org.apache.cxf;version="[3.
+ 2,4)",org.apache.cxf.feature;version="[3.2,4)",org.apache.cxf.intercept
+ or;version="[3.2,4)",org.apache.cxf.sts,org.apache.cxf.sts.operation,or
+ g.apache.cxf.sts.service,org.apache.cxf.sts.token.delegation,org.apache
+ .cxf.sts.token.provider,org.apache.cxf.sts.token.validator,org.apache.c
+ xf.ws.security.sts.provider;version="[3.2,4)",org.apache.wss4j.common.e
+ xt;version="[2.2,3)",org.apache.wss4j.dom.validate;version="[2.2,3)",or
+ g.osgi.service.blueprint;version="[1.0.0,2.0.0)"
+Tool: Bnd-2.1.0.20130426-122213

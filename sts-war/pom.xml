@@ -57,16 +57,32 @@
             <version>${slf4j.version}</version>
             <scope>runtime</scope>
         </dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-context</artifactId>
-			<version>${spring.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-webmvc</artifactId>
-			<version>${spring.version}</version>
-		</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-context</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-webmvc</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+	<dependency>
+	 	<groupId>org.apache.cxf</groupId>
+	 	<artifactId>cxf-rt-frontend-jaxrs</artifactId>
+		 <version>${cxf.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>com.fasterxml.jackson.jaxrs</groupId>
+		<artifactId>jackson-jaxrs-xml-provider</artifactId>
+        	<version>2.9.3</version>
+	</dependency>
+	<dependency>
+		<groupId>com.fasterxml.jackson.jaxrs</groupId>
+		<artifactId>jackson-jaxrs-json-provider</artifactId>
+		<version>2.9.3</version>
+	</dependency>
+
 		
         <!-- Test dependencies -->
         <dependency>
@@ -111,13 +127,6 @@
                     <path>/${project.build.finalName}</path>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-site-plugin</artifactId>
-                <configuration>
-	              	<generateReports>false</generateReports>
-	            </configuration>
-			</plugin>
         </plugins>
         <!-- Name of the generated WAR file -->
         <finalName>SecurityTokenService</finalName>

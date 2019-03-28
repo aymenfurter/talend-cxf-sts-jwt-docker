@@ -39,7 +39,7 @@
     <import resource="cxf-ut.xml"/>   
     <import resource="cxf-encrypted-ut.xml"/>   
     <import resource="cxf-x509.xml"/>   
-
+    <import resource="cxf-jwt.xml"/>
 
 </beans>
 
