@@ -12,7 +12,8 @@
 	Http-Method: POST
 	Content-Type: text/xml;charset=UTF-8
 	Headers: {accept-encoding=[gzip,deflate], connection=[Keep-Alive], Content-Length=[1548], content-type=[text/xml;charset=UTF-8], host=[localhost:8080], SOAPAction=["http://docs.oasis-open.org/ws-sx/ws-trust/200512/RST/Issue"], user-agent=[Apache-HttpClient/4.1.1 (java 1.5)]}
-	Payload: <soapenv:Envelope xmlns:ns="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	Payload: 
+	<soapenv:Envelope xmlns:ns="http://docs.oasis-open.org/ws-sx/ws-trust/200512" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
 		   <soapenv:Header>
 	      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
 	         <wsse:UsernameToken wsu:Id="UsernameToken-F58F4572177B3478FC15537260095972">
